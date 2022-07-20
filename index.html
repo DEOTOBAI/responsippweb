@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project - HTML registration form with varification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<! –– 
+
+––>
+<body>
+  <div class="kotak">
+    <h1>Formulir Pendaftaraan Anggota Komunitas -034</h1>
+    <form name="registration" class="form-pendaftaran" method="post" action="proses.php" onsubmit="return Validation() ">
+    
+      <table>
+        <tr>
+          <td><label for="email">Alamat Email:</label></td>
+          <td><input type="text" name="email" id="email" placeholder="xxx.@gmail.com"></td>
+        </tr>
+        <tr>
+          <td><label for="nama">Nama Lengkap:</label></td>
+          <td><input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+          <td><label for="namap">Nama Panggilan:</label></td>
+          <td><input type="text" name="namap" id="namap"></td>
+        </tr>
+        <tr>
+          <td><label for="kelamin">Jenis Kelamin:</label></td>
+          <td>
+            <select name="kelamin" id="kelamin">
+              <option value="">Pilih Jenis Kelamin</option>
+              <option value="laki-laki">Laki-Laki</option>
+              <option value="perempuan">Perempuan</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="kota">Domisili Kota:</label></td>
+          <td><input type="text" name="kota" id="kota"></td>
+        </tr>
+        <tr>
+          <td><label for="pekerjaan">Pekerjaan:</label></td>
+          <td><input type="text" name="pekerjaan" id="pekerjaan"></td>
+        </tr>
+        <tr>
+          <td><label for="nomorwa">Nomor WA Aktif:</label></td>
+          <td><input type="number" name="nomorwa" id="nomorwa"></td>
+        </tr>
+       <tr>
+          <td><label for="usig">Username IG (Jika Ada):</label></td>
+          <td><input type="text" name="usig" id="usig"></td>
+        </tr>
+        <tr>
+          <td><label for="alasan">Alasan ikut komunitas:</label></td>
+          <td><textarea name="alasan" id="alasan" placeholder="Saya mau ikut komunitas karena ..."></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" class="submit" value="Daftar" /></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+<div align="center"><strong><a href="lihatdata.php">::Klik disini jika anda ketua::
+</a></strong></div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
