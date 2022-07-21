@@ -1,0 +1,38 @@
+.background{
+  width: 320px;
+  height: 620px;
+  background-color: #eaedef;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#tampil {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.kotak {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.kotak > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+    background-color:#d3dade
+}
+
+.tombol {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
